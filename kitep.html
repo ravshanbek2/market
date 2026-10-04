@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Китеп Дүкөнү — онлайн китеп дүкөнү</title>
+  <meta name="description" content="Кыргыз жана дүйнөлүк адабияттын тандалма китептери.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container bar">
+    <a class="logo" href="#top">📚 Китеп Дүкөнү</a>
+    <nav aria-label="Башкы меню">
+      <a href="#top">Башкы бет</a><a href="#books">Китептер</a><a href="#authors">Авторлор</a><a href="#genres">Жанрлар</a><a href="#about">Биз жөнүндө</a>
+    </nav>
+    <form class="search" role="search">
+      <input type="search" placeholder="Китеп издөө..." aria-label="Китеп издөө">
+    </form>
+    <a class="cart" href="#cart" aria-label="Себет">🛒</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Сүйүктүү китебиңди тап!</h1>
+      <p>Кыргыз жана дүйнөлүк адабияттын тандалма китептери бир жерде. Айтматовдон Булгаковго чейин — окууга татыктуу чыгармаларды табыңыз.</p>
+      <a class="btn big" href="#books">Китептерди көрүү</a>
+    </div>
+    <div class="spines" aria-hidden="true"></div>
+  </section>
+
+  <section class="section container" id="books">
+    <h2>Популярдуу китептер</h2>
+    <div class="grid">
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=70" alt="«Кылым карытар бир күн» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>Кыргызча</span><span>Роман</span></p>
+          <h3>Кылым карытар бир күн</h3>
+          <p class="author">Чыңгыз Айтматов</p>
+          <p class="desc">Казак чөлүндөгү темир жол разъездинде өткөн бир күн аркылуу адам, убакыт жана эстутум жөнүндө терең баян.</p>
+          <p class="price">450 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=70" alt="«Жамийла» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>Кыргызча</span><span>Повесть</span></p>
+          <h3>Жамийла</h3>
+          <p class="author">Чыңгыз Айтматов</p>
+          <p class="desc">Сүйүү, эркиндик жана искусство жөнүндө жазылган дүйнөгө белгилүү лирикалык повесть.</p>
+          <p class="price">350 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=70" alt="«Ак кеме» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>Кыргызча</span><span>Повесть</span></p>
+          <h3>Ак кеме</h3>
+          <p class="author">Чыңгыз Айтматов</p>
+          <p class="desc">Бала менен анын жомокко болгон ишениминин ортосундагы кайгылуу окуя.</p>
+          <p class="price">400 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=70" alt="«The Alchemist» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>English</span><span>Novel</span></p>
+          <h3>The Alchemist</h3>
+          <p class="author">Paulo Coelho</p>
+          <p class="desc">Кой кайтарган жигиттин өз тагдырын издеген жолу жөнүндө шыктандыруучу тамсил.</p>
+          <p class="price">600 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=70" alt="«Harry Potter» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>English</span><span>Fantasy</span></p>
+          <h3>Harry Potter</h3>
+          <p class="author">J.K. Rowling</p>
+          <p class="desc">Сыйкырчылар мектебинде окуган баланын достукка жана укмуштуу окуяларга толгон жолу.</p>
+          <p class="price">800 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=600&q=70" alt="«Мастер и Маргарита» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>Русский</span><span>Роман</span></p>
+          <h3>Мастер и Маргарита</h3>
+          <p class="author">Михаил Булгаков</p>
+          <p class="desc">Сүйүү, сатира жана мистика аралашкан орус адабиятынын улуу чыгармасы.</p>
+          <p class="price">650 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=70" alt="«Кыямат» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>Кыргызча</span><span>Роман</span></p>
+          <h3>Кыямат</h3>
+          <p class="author">Чыңгыз Айтматов</p>
+          <p class="desc">Адамдын жоопкерчилиги жана табиятка болгон мамилеси жөнүндө терең роман.</p>
+          <p class="price">480 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=70" alt="«Манас» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>Кыргызча</span><span>Эпос</span></p>
+          <h3>Манас</h3>
+          <p class="author">Элдик эпос</p>
+          <p class="desc">Кыргыз элинин баатырдык эпосу, кылымдар бою оозеки айтылып келген мурас.</p>
+          <p class="price">900 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?auto=format&fit=crop&w=600&q=70" alt="«Преступление и наказание» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>Русский</span><span>Роман</span></p>
+          <h3>Преступление и наказание</h3>
+          <p class="author">Фёдор Достоевский</p>
+          <p class="desc">Кылмыш, абийир жана актануу жөнүндө психологиялык роман.</p>
+          <p class="price">550 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1550399105-c4db5fb85c18?auto=format&fit=crop&w=600&q=70" alt="«1984» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>English</span><span>Роман</span></p>
+          <h3>1984</h3>
+          <p class="author">George Orwell</p>
+          <p class="desc">Толук көзөмөлдөгү коом жөнүндө антиутопиялык эскертүү.</p>
+          <p class="price">500 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=600&q=70" alt="«Кичинекей ханзаада» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>Кыргызча</span><span>Жомок</span></p>
+          <h3>Кичинекей ханзаада</h3>
+          <p class="author">А. де Сент-Экзюпери</p>
+          <p class="desc">Чоңдорго да, балдарга да арналган достук жана жоопкерчилик жөнүндө поэтикалык жомок.</p>
+          <p class="price">300 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <a class="cover" href="#details"><img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&w=600&q=70" alt="«Шерлок Холмс» китебинин мукабасы" loading="lazy"></a>
+        <div class="card-body">
+          <p class="chips"><span>English</span><span>Детектив</span></p>
+          <h3>Шерлок Холмс</h3>
+          <p class="author">Arthur Conan Doyle</p>
+          <p class="desc">Лондондогу сырдуу иштерди чечкен даңктуу детективдин классикалык окуялары.</p>
+          <p class="price">550 сом</p>
+          <div class="actions"><button class="btn" type="button">Сатып алуу</button><a class="btn ghost" href="#details">Толук маалымат</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section tint" id="genres">
+    <div class="container">
+      <h2>Жанрлар</h2>
+      <div class="cats">
+        <a class="cat" href="#books"><span aria-hidden="true">📖</span>Романдар</a>
+        <a class="cat" href="#books"><span aria-hidden="true">🚀</span>Фантастика</a>
+        <a class="cat" href="#books"><span aria-hidden="true">🔍</span>Детектив</a>
+        <a class="cat" href="#books"><span aria-hidden="true">🏛️</span>Тарыхый</a>
+        <a class="cat" href="#books"><span aria-hidden="true">🧸</span>Балдар үчүн</a>
+        <a class="cat" href="#books"><span aria-hidden="true">🧠</span>Психология</a>
+        <a class="cat" href="#books"><span aria-hidden="true">🏔️</span>Кыргыз адабияты</a>
+        <a class="cat" href="#books"><span aria-hidden="true">🌍</span>Дүйнөлүк адабият</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="authors">
+    <h2>Авторлор</h2>
+    <div class="authors">
+      <article class="author-card">
+        <div class="avatar" data-i="ЧА"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&h=300&q=70" alt="Чыңгыз Айтматов" loading="lazy"></div>
+        <h3>Чыңгыз Айтматов</h3><p>Кыргызстан</p><p class="count">25 китеп</p>
+      </article>
+      <article class="author-card">
+        <div class="avatar" data-i="ПК"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=70" alt="Пауло Коэльо" loading="lazy"></div>
+        <h3>Пауло Коэльо</h3><p>Бразилия</p><p class="count">18 китеп</p>
+      </article>
+      <article class="author-card">
+        <div class="avatar" data-i="ДР"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&h=300&q=70" alt="Дж. К. Роулинг" loading="lazy"></div>
+        <h3>Дж. К. Роулинг</h3><p>Улуу Британия</p><p class="count">12 китеп</p>
+      </article>
+      <article class="author-card">
+        <div class="avatar" data-i="МБ"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&h=300&q=70" alt="Михаил Булгаков" loading="lazy"></div>
+        <h3>Михаил Булгаков</h3><p>Россия</p><p class="count">9 китеп</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section tint" id="details-wrap">
+    <div class="container">
+      <h2>Китептин барагы</h2>
+      <article class="details" id="details">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=70" alt="«Кылым карытар бир күн» китебинин мукабасы">
+        <div>
+          <p class="chips"><span>Кыргызча</span><span>Роман</span></p>
+          <h3>Кылым карытар бир күн</h3>
+          <p class="author">Чыңгыз Айтматов</p>
+          <dl>
+            <dt>Тили</dt><dd>Кыргызча</dd>
+            <dt>Жанры</dt><dd>Роман</dd>
+            <dt>Басылган жылы</dt><dd>1980</dd>
+            <dt>Барак саны</dt><dd>384</dd>
+          </dl>
+          <p class="desc">Казак чөлүндөгү темир жол разъездинде өткөн бир күн аркылуу адам, убакыт жана эстутум жөнүндө терең баян. Тагдыр, ата-бабалардын мурасы жана жоопкерчилик бул романдын борборунда турат.</p>
+          <p class="price">450 сом</p>
+          <div class="actions">
+            <label class="qty">Саны <input type="number" min="1" value="1"></label>
+            <button class="btn big" type="button">Сатып алуу</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="about">
+  <div class="container">
+    <p class="logo">📚 Китеп Дүкөнү</p>
+    <p>Биз жөнүндө: Китеп Дүкөнү — кыргыз жана дүйнөлүк адабиятты окурмандарга жакындаткан онлайн дүкөн.</p>
+    <p class="copy">© 2026 Китеп Дүкөнү. Бардык укуктар корголгон.</p>
+  </div>
+</footer>
+</body>
+</html>
